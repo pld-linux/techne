@@ -9,6 +9,7 @@ License:	GPL v3+
 Group:		Applications
 Source0:	http://mirror.lihnidos.org/GNU/savannah/techne/%{name}-%{version}.tar.gz
 # Source0-md5:	ce836281dd38394f98a919d13ed891a7
+Patch0:		%{name}-bin.patch
 URL:		http://savannah.nongnu.org/projects/techne/
 BuildRequires:	OpenAL-devel
 BuildRequires:	OpenGL-GLU-devel
@@ -35,8 +36,8 @@ given system.
 
 %prep
 %setup -q
+%patch0 -p1
 %{__sed} -i 's/\[lua5.1\]/\[lua51\]/' configure.ac
-%{__sed} -i 's,${libdir}/techne,%{_bindir},' src/techne.in
 
 %build
 %{__aclocal}
