@@ -10,6 +10,9 @@ Group:		Applications
 Source0:	http://mirror.lihnidos.org/GNU/savannah/techne/%{name}-%{version}.tar.gz
 # Source0-md5:	ce836281dd38394f98a919d13ed891a7
 URL:		http://savannah.nongnu.org/projects/techne/
+BuildRequires:	OpenAL-devel
+BuildRequires:	OpenGL-GLU-devel
+BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gcc-objc
