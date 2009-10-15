@@ -36,6 +36,7 @@ given system.
 %prep
 %setup -q
 %{__sed} -i 's/\[lua5.1\]/\[lua51\]/' configure.ac
+%{__sed} -i 's,${libdir}/techne,%{_bindir},' src/techne.in
 
 %build
 %{__aclocal}
@@ -50,13 +51,15 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install src/techne.bin $RPM_BUILD_ROOT%{_bindir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%attr(755,root,root) %{_bindir}/techne
+%attr(755,root,root) %{_bindir}/techne*
 %{_datadir}/%{name}
 %dir %{_libdir}/%{name}
 %{_libdir}/%{name}/*.so
