@@ -17,8 +17,7 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gcc-objc
-BuildRequires:	lua51
-BuildRequires:	lua51-devel
+BuildRequires:	lua-libs >= 5.1
 BuildRequires:	ode-devel
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
