@@ -1,11 +1,17 @@
---- techne-0.1/src/techne.in~	2009-10-12 12:50:07.000000000 +0000
-+++ techne-0.1/src/techne.in	2009-10-15 13:32:09.000000000 +0000
-@@ -3,6 +3,6 @@
+--- techne-0.2/src/techne.in~	2010-09-05 22:36:14.000000000 +0200
++++ techne-0.2/src/techne.in	2010-12-14 12:01:45.414521334 +0100
+@@ -2,7 +2,7 @@
+ 
+ prefix=@prefix@
  exec_prefix=@exec_prefix@
- libdir=@libdir@
+-libdir=@libdir@
++bindir=@bindir@
+ datarootdir=@datarootdir@
  datadir=@datadir@
--cd ${datadir}/techne
--${libdir}/techne/techne.bin $*
-+cd ${datadir}
-+/usr/bin/techne.bin $*
- cd ${curdir}
+ debug=""
+@@ -23,4 +23,4 @@
+     shift
+ done
+ 
+-${debug} ${libdir}/techne/techne.bin -Oprefix=${datadir}/techne $args
++${debug} ${bindir}/techne/techne.bin -Oprefix=${datadir}/techne $args
