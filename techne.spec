@@ -11,16 +11,22 @@ Source0:	http://mirror.lihnidos.org/GNU/savannah/techne/%{name}-%{version}.tar.g
 # Source0-md5:	368b91f12f63b382b260ab3e46b58d46
 Patch0:		%{name}-bin.patch
 URL:		http://savannah.nongnu.org/projects/techne/
+BuildRequires:	ImageMagick-devel
 BuildRequires:	OpenAL-devel
 BuildRequires:	OpenGL-GLU-devel
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gcc-objc
+BuildRequires:	gtk+2-devel
+BuildRequires:	gtk-webkit-devel
+BuildRequires:	gtkglext-devel
 BuildRequires:	libgomp-devel
 BuildRequires:	libmicrohttpd-devel
+BuildRequires:	lua51
 BuildRequires:	lua51-devel
 BuildRequires:	ode-devel
+BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
