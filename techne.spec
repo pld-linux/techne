@@ -3,12 +3,12 @@
 #
 Summary:	Programmable physical simulator and renderer
 Name:		techne
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	http://mirror.lihnidos.org/GNU/savannah/techne/%{name}-%{version}.tar.gz
-# Source0-md5:	aada599e3e46f05c3131d718ccefd320
+# Source0-md5:	28707d1227e1adbf87d8e12c7af2cf8b
 Patch0:		%{name}-bin.patch
 URL:		http://savannah.nongnu.org/projects/techne/
 BuildRequires:	ImageMagick-devel
@@ -27,6 +27,7 @@ BuildRequires:	lua51
 BuildRequires:	lua51-devel
 BuildRequires:	ode-devel
 BuildRequires:	pkgconfig
+BuildRequires:	plplot-devel
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
