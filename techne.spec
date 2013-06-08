@@ -70,6 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/techne.bin
+%attr(755,root,root) %{_bindir}/techne
+%attr(755,root,root) %{_bindir}/techne-browser
 %attr(755,root,root) %{_bindir}/browser.bin
 %{_datadir}/%{name}
 %dir %{_libdir}/%{name}
