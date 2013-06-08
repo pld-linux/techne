@@ -3,12 +3,12 @@
 #
 Summary:	Programmable physical simulator and renderer
 Name:		techne
-Version:	0.2.2
+Version:	0.2.3
 Release:	1
 License:	GPL v3+
 Group:		Applications
 Source0:	http://mirror.lihnidos.org/GNU/savannah/techne/%{name}-%{version}.tar.gz
-# Source0-md5:	28707d1227e1adbf87d8e12c7af2cf8b
+# Source0-md5:	9fbe50271929fa2aad7235baf9df93a9
 Patch0:		%{name}-bin.patch
 URL:		http://savannah.nongnu.org/projects/techne/
 BuildRequires:	ImageMagick-devel
